@@ -1,0 +1,245 @@
+/* ESTILOS GERAIS */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;;
+}
+
+body,html{
+    height:100%;
+    background-color:var(--clr-white);
+}
+
+hr{
+    width: 150px;
+    margin: 10px auto;
+    height: 5px;
+    background-color: black;
+    
+}
+
+:root{
+    --clr-red:#FD0235;
+    --clr-white:#f5f5f5;
+    --clr-black-gold:#120900;
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.section__titulo{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top:50px ;
+    margin-bottom: 50px;
+}
+/* MENU */
+.menu{
+   box-shadow:1px 4px lightgray ;
+   position: sticky;
+}
+.menu-c{
+    max-width: 960px;
+    margin:0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.logo__h{
+    width:85px;
+    border-radius: 50%;
+    margin:10px;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.nav__link{
+    padding-left: 50px;
+    font-weight: bold;
+   
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    margin:10px;
+
+}
+
+.menu__title{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu__descricao{
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:980px){
+    .menu-c{
+        display: block;
+    }
+    
+    .logo__h{
+        margin: 0 auto;
+        width: 150px;
+        display: block;
+    }
+   
+    .nav__list{
+        display: inline-block;
+        margin: 18px auto;
+        
+    }
+    .nav__list li{
+       padding: 15px;
+    }
+    .nav__list li:hover{
+        text-decoration: underline;
+     }
+}
+/* ---------------------------------- */
+
+/* SOMOS */
+
+.somos{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+.somos-c{
+    display: flex;
+    flex-wrap: wrap;
+}
+.somos__img{
+    margin-top:20px ;
+    border:solid 1px black;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.somos__texto{
+    max-width: 500px;
+    margin:20px 20px;
+    font-size: larger;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:954px){
+    .somos-c{
+        display: block;
+    }
+    .somos-img{
+        margin:20px auto;
+        text-align: center;
+    }
+    .somos__img{
+        width: 100%;
+    }
+    .somos__texto{
+        margin: 0 auto;
+    }
+}
+
+/* ------------------------- */
+
+/* SERVICOS */
+
+.servicos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.servicos-c{
+    display: flex;
+    
+    
+}
+.servico{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.servico__titulo{
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.servico__img{
+    width:500px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.servico__descricao{
+    max-width: 400px;
+    text-align: justify;
+    font-size: 1.3rem;
+    margin: 10px 30px;
+    
+}
+
+@media screen and (max-width:980px){
+   .servico{
+    display: block;
+    margin:0 auto;
+   }
+} 
+
+/* -------------------------- */
+
+/* AGENDE HORARIO */
+
+.horario{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+.horario__descricao{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.btn{
+    width:250px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color:#25D366;
+    font-weight: bold;
+    cursor: pointer;
+    padding:30px 60px;
+    border: solid 2px;
+    
+}
+
+footer{
+    border-top: 2px solid;
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
